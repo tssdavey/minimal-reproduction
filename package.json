@@ -1,0 +1,23 @@
+{
+  "name": "tadhg-minimal-reproduction",
+  "version": "0.1.0",
+  "description": "tadhg-minimal-reproduction",
+  "type": "module",
+  "private": true,
+  "main": "src/server.js",
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js server.js",
+    "dev": "wrangler dev src/server.js --env dev --node-compat --experimental-local",
+    "test": "c8 mocha test --exit --timeout 10000"
+  },
+  "keywords": [],
+  "author": "Tadhg Davey <tadhgdavey@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@whatwg-node/server": "^0.9.5",
+    "isomorphic-fetch": "^3.0.0",
+    "itty-router": "^4.0.0",
+    "nodemon": "^3.0.1",
+    "node-fetch": "^3.2.2"
+  }
+}
